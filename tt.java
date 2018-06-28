@@ -1,6 +1,6 @@
 package helloworld;
 
-public class tt {
+public class TestCountSquarePairs {
 
 	public static void main(String[] args) {
 		System.out.println(countSquarePairs(new int[] {11, 5, 4, 20}));
@@ -25,14 +25,11 @@ public class tt {
 				if (a[j] <= 0) {
 					continue;
 				}
-				
-				if(a[i] == a[j]) {
-					return -1; // duplicate error 
-				}
+	
 				
 				int checkNumber = a[i] + a[j];
 				if (isPerfectSquare(checkNumber) == 1) {
-					countSquarePairsResult++;
+					countSquarePairsResult+=2;
 				}
 			}
 		}
